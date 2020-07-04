@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.edge.iitbhu.myapplication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_testing"
+            app:destination="@id/testing" />
+        <action
+            android:id="@+id/action_homeFragment_to_inference"
+            app:destination="@id/inference" />
+    </fragment>
+    <fragment
+        android:id="@+id/testing"
+        android:name="com.edge.iitbhu.myapplication.Testing"
+        android:label="fragment_testing"
+        tools:layout="@layout/fragment_testing" >
+        <argument
+            android:name="model_name"
+            app:argType="string"
+            android:defaultValue="none"/>
+    </fragment>
+    <fragment
+        android:id="@+id/inference"
+        android:name="com.edge.iitbhu.myapplication.Inference"
+        android:label="fragment_inference"
+        tools:layout="@layout/fragment_inference" >
+        <argument
+            android:name="model_name"
+            app:argType="string"
+            android:defaultValue="none" />
+    </fragment>
+</navigation>

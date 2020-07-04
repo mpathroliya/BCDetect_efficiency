@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Breast Cancer Detect-Time Test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="testing_welcome">"Testing</string>
+    <string name="inference_welcome">Inference</string>
+    <string name="mobilenet_name">MobileNetV2</string>
+    <string name="densenet_name">DenseNet201</string>
+    <string name="resnet50_name">ResNet50V2</string>
+    <string name="resnet152_name">ResNet152V2</string>
+    <string name="inception_name">InceptionV3</string>
+    <string name="xception_name">Xception</string>
+    <string name="testing_wating">Testing has been intiatiated please Wait...</string>
+    <string name="testing_resultText">Testing Completed</string>
+    <string name="upload_text">SELECT AN IMAGE</string>
+    <string name="inference_placeholder">inference placeholder</string>
+</resources>
